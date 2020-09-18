@@ -13,7 +13,7 @@ int main(void) {
     float number_of_people = 0.0f;
     // Add a person
 
-    // add_person("Me", &number_of_people);
+	add_person("niall", &number_of_people);
 
     // Print the number of attendees
     print_attendees(&number_of_people);
@@ -22,7 +22,7 @@ int main(void) {
 void add_person(const char* name, float* num_people) {
     // Add to the number of people
     (*num_people)++;
-    printf("%i: %s%s%s\n", *(int*)num_people, CYAN, name, RESET);
+    printf("%f: %s%s%s\n", *(float*)num_people, CYAN, name, RESET);
 }
 
 void print_attendees(float* maybe_number) {
